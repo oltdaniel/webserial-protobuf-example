@@ -4,7 +4,10 @@ Sending protcolbuffers between the browser and an ESP32 via WebSerial.
 
 ## Preview
 
-TODO: Insert screenshot
+| | |
+|-|-|
+| <img src="https://github.com/oltdaniel/webserial-protobuf-example/assets/53529846/141083cf-4d77-4ded-b96b-f06361277871" width="300" /> | <img src="https://github.com/oltdaniel/webserial-protobuf-example/assets/53529846/e2acf29d-df8f-4b3a-9e97-604d2f32f488" width="300" /> |
+
 
 ## Getting started
 
