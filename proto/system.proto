@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+message SystemMessage {
+    oneof message {
+        Ping ping = 1;
+        Pong pong = 2;
+        Time time = 3;
+    }
+};
+
+message Ping {
+
+};
+
+message Pong {
+
+};
+
+message Time {
+    uint32 current = 1;
+};

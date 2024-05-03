@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Vite App</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+  </head>
+  <body>
+    <h1>Serial Demo</h1>
+
+    <small>
+      <b>NOTE</b>: Only compatiable with chromium based browsers.
+    </small>
+
+    <h2>Message Types</h2>
+
+    <p>
+      <ul>
+        <li><code>ping</code>: should trigger an pong response.</li>
+        <li><code>pong</code>: answers an ping message. is sent automatically.</li>
+        <li><code>time</code>: if sent with zero, it responds with the current elapsed time in milliseconds since boot.</li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <h2>Connect</h2>
+    <label for="baud-inp">Baudrate</label>
+    <input type="number" id="baud-inp" value="9600" />
+
+    <button id="connect-btn" class="secondary">Connect</button>
+
+    <hr>
+
+    <h2>Terminal</h2>
+    <textarea id="terminal-output" rows="15" disabled></textarea>
+
+    <hr>
+
+    <h2>Send messages</h2>
+    <button id="ping-btn" disabled>Send Ping</button>
+    <button id="time-btn" disabled>Send Time</button>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

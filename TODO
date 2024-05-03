@@ -1,0 +1,10 @@
+## Firmware
+
+- connect second serial to see if everything works as expected and send some pings to the browser
+
+## Web
+
+- choose an event based approach instead of the current way
+- auto re-connect if port becomes available again
+- move heavy logic to worker in background to avoid ui issues
+- handle disconnects correctly

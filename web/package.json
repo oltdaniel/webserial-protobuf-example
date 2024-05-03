@@ -1,0 +1,19 @@
+{
+  "name": "web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "proto:build": "pbjs -t static-module -w es6 -o system.proto.js ../proto/system.proto"
+  },
+  "devDependencies": {
+    "protobufjs-cli": "^1.1.2",
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "protobufjs": "^7.2.6"
+  }
+}
